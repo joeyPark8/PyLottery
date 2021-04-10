@@ -2,14 +2,13 @@ import random
 
 lotteries = []
 
-''' 그냥 자동
+#그냥 자동
 for i in range(10):
     nums = random.sample(range(1, 46), 6)
     nums.sort()
     lotteries.append(nums)
-'''
 
-''' 범위 지정 자동
+#범위 지정 자동
 percentages = {
     '1~10' : 0,
     '11~20' : 0,
@@ -33,7 +32,7 @@ for i in percentages.items():
 for i in nums:
     for j in i:
         print(j, end=' ')
-'''
+
 
 #자동 + 수동
 nums = []
